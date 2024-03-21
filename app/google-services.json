@@ -1,0 +1,51 @@
+{
+  "project_info": {
+    "project_number": "96245117487",
+    "project_id": "vibechat-backend",
+    "storage_bucket": "vibechat-backend.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:96245117487:android:415268f27604c68dba8cda",
+        "android_client_info": {
+          "package_name": "com.example.vibechat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTHCv5JaCrVQlB0yDvObaZf8yLRj4nS4A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1",
+  "storage_rules": {
+    "rules_version": "2",
+    "service": "firebase.storage",
+    "match": {
+      "b": "{bucket}",
+      "o": {
+        "allPaths": {
+          "allow": "read, write",
+          "if": "true"
+        }
+      }
+    }
+  },
+  "rules": {
+    ".read": true,
+    ".write": "auth != null",
+    "messages": {
+      "$messageId": {
+        ".write": "auth.uid == data.child('userId').val()"
+      }
+    }
+  }
+}

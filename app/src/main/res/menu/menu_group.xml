@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_chats"
+        android:title="Chats"
+        android:icon="@drawable/chaticon" />
+    <item
+        android:id="@+id/menu_groups"
+        android:title="Groups"
+        android:icon="@drawable/groupchat" />
+    <item
+        android:id="@+id/menu_meets"
+        android:title="Meets"
+        android:icon="@drawable/meet_icon" />
+    
+    <item android:title="Profile"
+        android:icon="@drawable/user_icon"
+        android:iconTint="@color/MY_PRIMARY"
+        android:id="@+id/menu_profile"
+        />
+</menu>

@@ -1,0 +1,26 @@
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Chats"
+        android:icon="@drawable/chaticon"
+        android:iconTint="@color/MY_PRIMARY"
+        android:id="@+id/menu_chat"
+        />
+    <item
+        android:id="@+id/menu_group"
+        android:icon="@drawable/group_users"
+        android:title="Groups" />
+    <item
+    android:id="@+id/menu_meets"
+    android:title="Meets"
+    android:icon="@drawable/meets_icon" />
+
+    <item android:title="Profile"
+        android:icon="@drawable/user_icon"
+        android:iconTint="@color/MY_PRIMARY"
+        android:id="@+id/menu_profile"
+        />
+
+
+
+</menu>
